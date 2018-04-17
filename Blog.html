@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<script src="http://ajax,googleapis.com/ajax/libs/angularjs/1.4.8/angular..js"></script>
+<script src="http://ajax,googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.min.js"></script>
+<script src="http://ajax,googleapis.com/ajax/libs/angularjs/1.4.8/angular-cookies.js"></script>
+
+<head>
+<title></title>
+<script src="RouteConfig.js"></script>
+<script src="c_user/UserController.js"></script>
+<meta name="viewport"content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax,googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.css"></script>
+</head>
+<body>
+
+
+<div class="container" ng-controller="BlogController">
+<h1 class="weii"><center><font face="Monotype Corsiva">Enter Blog</font></center></h1>
+<div class="coi-lg-12 well">
+<div class="row">
+         <form>
+           <div class="coi-sm-12">
+           <div class="row">
+           <div class="coi-sm-12 form-group">
+           <label>Blog Name</label>
+           <input type="text" name="blogName" ng-model="blog.blogname" placeholder="Enter User Name Here.." class="form-control">
+           </div>
+           </div>
+           <div class="row">
+           <div class="coi-sm-12 form-group">
+           <label>Blog Content</label>
+           <textarea rows="20" ng-model="blog.blogcontent" placeholder="Enter Password Here.." class="form-control"></textarea>
+           </div>
+            <center><input type="submitt" value="ADD BLOG" class="btn btn-lg btn-info"ng-click="addblog()"/></center>
+            </div> 
+            </div>
+          </form>
+        </div>
+      </div>
+</div>                   
+ </body>
